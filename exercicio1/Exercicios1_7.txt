@@ -1,0 +1,6 @@
+Variável 3= 7
+Variável 4= 10.5
+Variável 5= 10.5
+
+Variável 4 é maior que a 10.0
+Variável 5 é maior que a 10.0
