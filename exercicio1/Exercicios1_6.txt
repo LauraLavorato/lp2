@@ -1,0 +1,4 @@
+No exercício 3, foi mostrado apenas os números inteiros que faziam parte da resposta. 
+Já nos exercícios 4 e 5 foram mostrados os números depois da vírgula (0, no caso), 
+nestes exercícios (4 e 5) não houve diferença nas respostas, 
+ainda que os tipos das variáveis fossem diferentes.
