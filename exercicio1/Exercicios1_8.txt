@@ -1,0 +1,3 @@
+O erro da letra 'a' está no ";" logo após o parênteses depois do if.
+O erro da letra 'b' está no sinal de >= (maior igual a), no caso o sinal está invertido e, 
+consequentemente, o que será impresso também. Correto: c is greater or equal to than 7.
