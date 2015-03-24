@@ -1,0 +1,5 @@
+Qual o propósito da palavra-chave new?
+
+Essa palavra-chave é um construtor e é utilizada para instanciar um objeto, ou seja, alocar um espaço na memória e 
+atribuir o valor default para que depois este objeto possa ser utilizado posteriormente e assim, receber realmente um 
+valor.
