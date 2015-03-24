@@ -1,0 +1,13 @@
+Tipo Abstrato de Dados: Restringe o acesso ao atributos através do encapsulamento, pois estes só podem ser manipulados
+através dos métodos. Este método de programação tem a intenção de reduzir as informações contidas no algoritmo através da 
+abstração dos objetos.
+
+Classe: É um tipo abstrato de dados que possui atributos (variáveis) e métodos (operações). Se trata de um conceito 
+estático que representa um modelo abstrato.
+
+Objeto: É a instância de uma classe, ou seja, é a materialização dela (através da alocação na memória). Pode ser definido
+também como um conceito dinâmico.
+
+Mensagem: É uma requisição, de um objeto para outro, onde o objeto requisitado deve fornecer um resultado através da 
+execução de um método.
+
