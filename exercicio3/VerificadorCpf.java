@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CPF{
+public class VerificadorCpf{
     
     public int[] vetorInt = new int[11];
     
@@ -66,7 +66,7 @@ public class CPF{
     
     public static void main (String [] args){
      
-        CPF cpf=new CPF();
+        VerificadorCpf cpf=new VerificadorCpf();
         cpf.lerCPF();
         cpf.soma();
         cpf.soma2();
