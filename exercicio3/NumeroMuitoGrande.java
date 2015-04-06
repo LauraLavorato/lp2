@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class NumeroMuitoGrande {
@@ -5,6 +6,7 @@ public class NumeroMuitoGrande {
     public int[] vetor1 = new int[30];
     public int[] vetor2 = new int[30];
     public int[] soma = new int[30];
+    public int[] mult= new int[30];
     String n1, n2;
 
     public void leNumero() {
@@ -49,6 +51,20 @@ public class NumeroMuitoGrande {
                 System.out.print(soma[i]);
         }
     }
+    
+    public void Multiplicacao() {
+        int vai=0;
+        for (int i=0; i<=29; i++){
+            int pos=i;
+            for(int j=0; j<=29;j++){
+                mult[pos]= (mult[j]*mult[j+1]%10);
+                vai=((vetor1[i]+vetor2[i]+vai)/10);
+                pos++;
+                
+            }
+        }
+        
+    }
 
     public static void main(String[] args) {
 
@@ -56,6 +72,7 @@ public class NumeroMuitoGrande {
         big.leNumero();
         big.converte();
         big.soma();
+        big.multiplicacao();
 
     }
 
