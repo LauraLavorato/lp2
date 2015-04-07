@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class NumeroMuitoGrande {
@@ -6,7 +5,8 @@ public class NumeroMuitoGrande {
     public int[] vetor1 = new int[30];
     public int[] vetor2 = new int[30];
     public int[] soma = new int[30];
-    public int[] mult= new int[30];
+    public int[] resp1 = new int[30];
+    
     String n1, n2;
 
     public void leNumero() {
@@ -52,19 +52,34 @@ public class NumeroMuitoGrande {
         }
     }
     
-    public void Multiplicacao() {
-        int vai=0;
-        for (int i=0; i<=29; i++){
+    public void multiplicar() {
+        int vai=0, flag=0;
+        for (int i=29; i>=0; i--){
             int pos=i;
-            for(int j=0; j<=29;j++){
-                mult[pos]= (mult[j]*mult[j+1]%10);
-                vai=((vetor1[i]+vetor2[i]+vai)/10);
-                pos++;
-                
+            for (int j=29;j>=0;j--){
+                if (pos>=0){
+                    resp1[pos]+= ((vetor1[i]*vetor2[j])+vai)%10;
+                    vai=((vetor1[i]+vetor2[i]+vai)/10);
+                }
             }
+            pos--;
+            
+        
+        }
+        System.out.print ("Resultado: ");
+        for (int i= 0; i <= 29; i++) {
+            if (resp1[i]==0 && flag==0 ) {
+                if (resp1[i+1] != 0)
+                    flag=1;
+            }
+            System.out.print(resp1[i]);
         }
         
+        
     }
+    
+    
+ 
 
     public static void main(String[] args) {
 
@@ -72,8 +87,7 @@ public class NumeroMuitoGrande {
         big.leNumero();
         big.converte();
         big.soma();
-        big.multiplicacao();
-
+        big.multiplicar();
     }
 
 }
